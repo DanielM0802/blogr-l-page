@@ -1,0 +1,33 @@
+//Fonts
+$overpass : 'Overpass', sans-serif;
+$ubuntu : 'Ubuntu', sans-serif;
+
+
+// Tamaño de Media Queries
+$telefono: 375px;
+$desktop: 1280px;
+
+//Colors
+//Primary
+$lightRed: hsl(356, 100%, 66%); //CTA Text
+$veryLightRed : hsl(355, 100%, 74%); //CTA hover background
+$veryDarkBlue: hsl(208, 49%, 24%); //Headings
+
+//Neutral
+$white: hsl(0, 0%, 100%);  //text
+$fondo: #efeff1;
+$grayishBlue: hsl(240, 2%, 79%); //footer text
+$veryDarkGrayishBlue: hsl(207, 13%, 34%); //body copy
+$veryDarkBlackBlue: hsl(240, 10%, 16%);
+
+
+//Gradient  Intro/CTA mobile nav
+$gVeryLightRed: hsl(13, 100%, 72%);
+$gLightRed: hsl(353, 100%, 62%);
+
+//Background gradient  BODY
+$veryDarkGrayBlue: hsl(237, 17%, 21%);
+$veryDarkDesaturedBlue: hsl(237, 23%, 32%);
+
+
+$fontSize: 1.6rem;

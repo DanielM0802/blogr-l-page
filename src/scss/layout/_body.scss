@@ -1,0 +1,169 @@
+.title-b{
+    color: $veryDarkBlackBlue;
+    font-size: 2.8rem;
+    letter-spacing: .2px;
+    color: $veryDarkBlue;
+}
+
+.section-1{
+    display: grid;
+    row-gap: 4.6rem;
+    .img-container{
+        height: 33.1rem;
+        background-repeat: no-repeat;
+        background-position: center;
+    }
+    .img-editor{
+        background-image: url(../../../src/images/mobile/illustration-editor-mobile.svg);
+    }
+}
+
+.feature{
+    .f-title{
+        color: $veryDarkBlue;
+        padding: 0 2rem;
+        font-size: 2.5rem;
+        margin-bottom: 2rem;
+    }
+    .f-parrafo{
+        color: $veryDarkGrayishBlue;
+        padding: 0 2rem;
+        font-size: 1.5rem;
+        line-height: 2;
+    }
+}
+
+
+//State of the Art Infrastucture
+//INFORMACION
+
+.informacion{
+    margin-top: 27rem;
+    position: relative;
+    min-height: 61rem;
+    background-color: $veryDarkGrayBlue;
+    background-image: url(../../../src/images/bg-pattern-circles.svg);
+    background-repeat: no-repeat;
+    background-position: center -25rem;
+    background-size: 60rem;
+    border-radius: 0 9rem;
+    margin-bottom: 8rem;
+
+    .phone-container{
+        display: flex;
+        justify-content: center;
+        .phone{
+            position: absolute;
+            margin-top: -20rem;
+            max-height: 39.4rem;
+        }
+    }
+    .texto{
+        margin-top: 22rem;
+        .c-white{
+            margin-top: 2.2rem;
+            color: $white;
+        }
+    }
+}      
+
+.img-laptop{
+    background-image: url(../../../src/images/mobile/illustration-laptop-mobile.svg);
+}
+
+@include desktop{
+    //Desgined for the future
+    .bg-svg{
+        position: absolute;
+        height: 88.5rem;
+        background-repeat: no-repeat;
+        width: 88rem;
+    }
+    .s-photo{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: auto 1fr auto;
+        row-gap: 8rem;
+        .img-container{
+            position: relative;
+            background-image: none;
+        }
+        .img-editor{
+            grid-row: 2/4;
+            grid-column: 2/3;
+            .prueba{
+                top: -22rem;
+                right: -40rem;
+                background-image: url(../../../src/images/desktop/illustration-editor-desktop.svg);
+            }
+        }
+    }
+    .title-b{
+        font-size: 3.6rem;
+        grid-column: 1/3;
+    }
+
+    .feature{
+        .f-title, .f-parrafo{
+            text-align: left;
+            padding: 0;
+        }
+        .f-title{
+            font-size: 2.8rem;
+        }
+        .f-parrafo{
+            max-width: 50.3rem;
+            font-size: $fontSize;
+        }
+    }
+    //State of the Art Infrastucture
+    //INFORMACION
+    .flex-r-h{
+        height: 100%;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+    .informacion{
+        margin-top: 23rem;
+        position: initial;
+        background-size: auto;
+        background-position: -19rem -55rem;
+        min-height: auto;
+        height: 40rem;
+        margin-bottom: 31rem;
+        .phone-container{
+            margin-left: -3.5rem;
+            .phone{
+                position: initial;
+                margin-top: 4rem;
+                max-height: 100%; //52
+            }
+        }
+        .texto{
+            margin-top: 0rem;
+            .title-d{
+                font-size: 3.8rem;
+            }
+            .c-white{
+                margin-top: 1.2rem;
+            }
+        }
+    }
+    //LAPTOP SECTION
+    .img-laptop{
+        background-image: url(../../../src/images/desktop/illustration-laptop-desktop.svg);
+    }
+    .s-photo{
+        .img-laptop{
+            grid-row: 1/4;
+            grid-column: 1/2;
+            .prueba22{
+                top: -19rem;
+                left: -45rem;
+                background-image: url(../../../src/images/desktop/illustration-laptop-desktop.svg);
+            }
+        }
+    }
+
+}

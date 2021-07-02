@@ -1,0 +1,56 @@
+.footer{
+    display: block;
+    background-color: $veryDarkBlackBlue;
+    border-top-right-radius: 9rem;
+    padding: 7.5rem 0;
+    margin-top: 10rem;
+}
+.f-container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.f-title{
+    font-size: 1.8rem;
+    font-family: $overpass;
+    color: $white;
+}
+.link{
+    margin-bottom: 1rem;
+    font-family: $overpass;
+    text-decoration: none;
+    color: $grayishBlue;
+    &:hover{
+        text-decoration: underline;
+    }
+}
+
+@include desktop{
+    .footer{
+        margin-top: 20rem;
+        padding: 7rem 0;
+    }
+    .f-nav{
+        display: flex;
+        justify-content: space-between;
+    }
+    .footer-container{
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+
+    }
+    .f-blogr{
+        font-size: 4rem;
+        text-align: left;
+    }
+    .f-title{
+        margin-top: .8rem;
+        font-size: 1.6rem;
+    }
+    .f-container{
+        justify-content: flex-start;
+        align-items: flex-start;
+    }
+}

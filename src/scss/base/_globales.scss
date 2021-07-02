@@ -1,0 +1,74 @@
+html {
+    font-size: 62.5%;
+    box-sizing: border-box;
+}
+*, *:before, *:after {
+    box-sizing: inherit;
+}
+body {
+    font-size: 1.6rem;
+    overflow-x: hidden;
+}
+
+img {
+    max-width: 100%;
+}
+
+h1, h2, h3, p, button {
+    font-family: $overpass;
+    color: $white;
+    text-align: center;
+    margin: 0;
+}
+span{
+    font-weight: 700;
+}
+
+.border-shadow{
+    box-shadow: 0px 8px 0px 0px rgba(0,0,0,.1);
+    border-radius: 1rem;
+}
+.flex{
+    display: flex;
+    align-items: center;
+}
+.flex-c{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.d-none{
+    display: none;
+}
+.arriba{
+    z-index: 1;
+}
+.mr-2{
+    margin-bottom: 2rem;
+}
+.container{
+   width: 86.7%; 
+    margin: 0 auto;
+}
+.t-center{
+    text-align: center;
+}
+button{
+    cursor: pointer;
+}
+
+@include desktop{
+    .flex-r{
+        flex-direction: row;
+    }
+    .container{
+        width: 77%;
+    }
+    .no-margin{
+        margin: 0;
+    }
+}
+
+
+
